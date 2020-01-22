@@ -8,12 +8,17 @@ This helps keep readers motivated to finish reading an article in its entirety.
 
 ## How To Use:
 
-First, import the javascript file into your HTML file.
+First, add the library stylesheet to your desired HTML file.
+```HTML
+<link rel="stylesheet" href="./progress-bar.css" />
+```
+
+Second, import the javascript file into your desired HTML file.
 ```HTML
 <script defer src="./position-tracker.min.js" type="module"></script>  
 ```
 
-Second, import the Javascript library into your own Javascript file and call the progress( height, color ) function.
+Third, import the Javascript library into your own Javascript file and call the progress( height, color ) function.
 ```javascript
 import progress from "./position-tracker.min.js";
 
@@ -22,13 +27,14 @@ The second is the desired background color of the progress bar.*/
 progress( 0.6, "#ff7a59" );
 ```
 
-Third, add your javascript file to your desired HTML file.
+Fourth, add your javascript file to your desired HTML file.
 ```HTML
 <script defer src="./myscript.js" type="module"></script>
 ```
 
-Lastly, the end result should be something like so on your HTML file:
+Lastly, the end result should be something like so within your HTML file:
 ```HTML
+<link rel="stylesheet" href="./progress-bar.css" />
 <script defer src="./position-tracker.min.js" type="module"></script>  
 <script defer src="./myscript.js" type="module"></script>
 ```
